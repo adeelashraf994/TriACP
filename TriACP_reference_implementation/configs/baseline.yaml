@@ -1,0 +1,57 @@
+# Baseline/reference settings only.
+# These are intentionally not the exact tuned manuscript hyperparameters.
+
+seed: 42
+device: auto
+
+paths:
+  aaindex: data/aaindex_example.csv
+  stage1_train: data/stage1_train_example.csv
+  stage1_test: data/stage1_test_example.csv
+  stage2: data/stage2_example.csv
+  stage3: data/stage3_example.csv
+  output_dir: outputs
+
+stage1:
+  model_name: facebook/esm2_t6_8M_UR50D
+  model_path: outputs/stage1/stage1_model.pt
+  freeze_esm: true
+  max_length: 256
+  folds: 3
+  epochs: 5
+  batch_size: 8
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  dropout: 0.20
+  feature_hidden: 64
+  primary_capsules: 8
+  primary_dim: 8
+  digit_dim: 8
+  routing_iterations: 2
+
+stage2:
+  cancer_types: [Breast, Colon, Lung, Skin, Cervix, Prostate, Blood]
+  folds: 3
+  epochs: 20
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  hidden_dims: [128, 64]
+  dropout: 0.20
+  threshold: 0.50
+
+stage3:
+  thresholds: [10.0, 50.0]
+  class_names: [Strong, Moderate, Weak]
+  folds: 3
+  epochs: 30
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  width: 128
+  depth: 2
+  dropout: 0.20
+  ensemble_size: 2
+  ordinal_loss_weight: 0.10
+  mc_dropout_passes: 5
+  validation_fraction: 0.20
