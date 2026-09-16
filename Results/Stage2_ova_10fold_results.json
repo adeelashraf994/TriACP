@@ -1,0 +1,130 @@
+{
+  "protocol": {
+    "task": "seven-label ACP functional activity prediction",
+    "strategy": "shared 10-fold cross-validation with binary relevance / OvA heads",
+    "n_folds": 10,
+    "test_usage": "Each peptide is outer-test exactly once; outer-test labels are not used for preprocessing, model selection, calibration, stacking, or threshold tuning."
+  },
+  "dataset": {
+    "n_unique_peptides": 211,
+    "label_supports": {
+      "Breast": 124,
+      "Colon": 137,
+      "Lung": 94,
+      "Skin": 106,
+      "Cervix": 105,
+      "Prostate": 89,
+      "Blood": 63
+    }
+  },
+  "per_cancer": {
+    "Breast": {
+      "accuracy": 0.8811369509043928,
+      "precision": 0.9260700389105059,
+      "recall": 0.8981132075471698,
+      "f1": 0.9118773946360154,
+      "mcc": 0.7302780493008734,
+      "sensitivity": 0.8981132075471698,
+      "specificity": 0.8442622950819673,
+      "auc": 0.9188988555521188,
+      "fpr": 0.1557377049180328,
+      "threshold": 0.5
+    },
+    "Colon": {
+      "accuracy": 0.875968992248062,
+      "precision": 0.925,
+      "recall": 0.8809523809523809,
+      "f1": 0.9024390243902439,
+      "mcc": 0.7341473307225173,
+      "sensitivity": 0.8809523809523809,
+      "specificity": 0.8666666666666667,
+      "auc": 0.9350088183421517,
+      "fpr": 0.13333333333333333,
+      "threshold": 0.5
+    },
+    "Lung": {
+      "accuracy": 0.8837209302325582,
+      "precision": 0.8980582524271845,
+      "recall": 0.8851674641148325,
+      "f1": 0.891566265060241,
+      "mcc": 0.7663252644148153,
+      "sensitivity": 0.8851674641148325,
+      "specificity": 0.8820224719101124,
+      "auc": 0.9496532444492232,
+      "fpr": 0.11797752808988764,
+      "threshold": 0.5
+    },
+    "Skin": {
+      "accuracy": 0.9121447028423773,
+      "precision": 0.9359605911330049,
+      "recall": 0.9004739336492891,
+      "f1": 0.9178743961352657,
+      "mcc": 0.8242167614524201,
+      "sensitivity": 0.9004739336492891,
+      "specificity": 0.9261363636363636,
+      "auc": 0.9565919862128394,
+      "fpr": 0.07386363636363637,
+      "threshold": 0.5
+    },
+    "Cervix": {
+      "accuracy": 0.8397932816537468,
+      "precision": 0.7857142857142857,
+      "recall": 0.8614457831325302,
+      "f1": 0.8218390804597702,
+      "mcc": 0.679223027043128,
+      "sensitivity": 0.8614457831325302,
+      "specificity": 0.8235294117647058,
+      "auc": 0.8829798833342419,
+      "fpr": 0.17647058823529413,
+      "threshold": 0.5
+    },
+    "Prostate": {
+      "accuracy": 0.8708010335917312,
+      "precision": 0.8611111111111112,
+      "recall": 0.8611111111111112,
+      "f1": 0.8611111111111112,
+      "mcc": 0.7403381642512077,
+      "sensitivity": 0.8611111111111112,
+      "specificity": 0.8792270531400966,
+      "auc": 0.9396403650026839,
+      "fpr": 0.12077294685990338,
+      "threshold": 0.5
+    },
+    "Blood": {
+      "accuracy": 0.9224806201550387,
+      "precision": 0.8416666666666667,
+      "recall": 0.9017857142857143,
+      "f1": 0.8706896551724138,
+      "mcc": 0.8164224902265917,
+      "sensitivity": 0.9017857142857143,
+      "specificity": 0.9309090909090909,
+      "auc": 0.9613961038961039,
+      "fpr": 0.06909090909090909,
+      "threshold": 0.5
+    }
+  },
+  "macro_average": {
+    "accuracy": 0.883720930232558,
+    "precision": 0.8819401351375371,
+    "recall": 0.8841499421132898,
+    "f1": 0.8824852752807228,
+    "mcc": 0.7558501553445077,
+    "sensitivity": 0.8841499421132898,
+    "specificity": 0.8789647647298577,
+    "auc": 0.9348813223984804,
+    "fpr": 0.12103523527014239
+  },
+  "micro_average": {
+    "accuracy": 0.8837209302325582,
+    "precision": 0.8890489913544669,
+    "recall": 0.8845878136200717,
+    "f1": 0.8868127919511318,
+    "mcc": 0.7672800164281725,
+    "sensitivity": 0.8845878136200717,
+    "specificity": 0.882800608828006,
+    "auc": 0.940462512888496,
+    "fpr": 0.1171993911719939,
+    "threshold": 0.5
+  },
+  "hamming_loss": 0.11627906976744186
+}

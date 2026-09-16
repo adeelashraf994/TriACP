@@ -1,0 +1,83 @@
+{
+
+  "cv_metrics": [
+    {
+      "eval_accuracy": 0.956989247311828,
+      "eval_precision": 0.9583333333333334,
+      "eval_recall": 0.9583333333333334,
+      "eval_f1": 0.9583333333333334,
+      "eval_mcc": 0.9138888888888889,
+      "eval_sensitivity": 0.9583333333333334,
+      "eval_specificity": 0.9555555555555556,
+      "eval_fpr": 0.044444444444444446,
+      "eval_auc": 0.978317901234568,
+      "eval_threshold": 0.7549999999999999,
+      "eval_threshold_accuracy": 0.956989247311828
+    },
+    {
+      "eval_accuracy": 0.974910394265233,
+      "eval_precision": 0.9788732394366197,
+      "eval_recall": 0.972027972027972,
+      "eval_f1": 0.9754385964912281,
+      "eval_mcc": 0.9498226425243954,
+      "eval_sensitivity": 0.972027972027972,
+      "eval_specificity": 0.9779411764705882,
+      "eval_fpr": 0.022058823529411766,
+      "eval_auc": 0.9885592348827643,
+      "eval_threshold": 0.30499999999999994,
+      "eval_threshold_accuracy": 0.974910394265233
+    },
+    {
+      "eval_accuracy": 0.946236559139785,
+      "eval_precision": 0.9848484848484849,
+      "eval_recall": 0.9090909090909091,
+      "eval_f1": 0.9454545454545454,
+      "eval_mcc": 0.8953984945155053,
+      "eval_sensitivity": 0.9090909090909091,
+      "eval_specificity": 0.9852941176470589,
+      "eval_fpr": 0.014705882352941176,
+      "eval_auc": 0.9755501851090086,
+      "eval_threshold": 0.27499999999999997,
+      "eval_threshold_accuracy": 0.946236559139785
+    },
+    {
+      "eval_accuracy": 0.9316546762589928,
+      "eval_precision": 0.984375,
+      "eval_recall": 0.8811188811188811,
+      "eval_f1": 0.9298892988929889,
+      "eval_mcc": 0.8686696367167466,
+      "eval_sensitivity": 0.8811188811188811,
+      "eval_specificity": 0.9851851851851852,
+      "eval_fpr": 0.014814814814814815,
+      "eval_auc": 0.9401191401191401,
+      "eval_threshold": 0.18,
+      "eval_threshold_accuracy": 0.9316546762589928
+    },
+    {
+      "eval_accuracy": 0.9460431654676259,
+      "eval_precision": 0.9705882352941176,
+      "eval_recall": 0.9230769230769231,
+      "eval_f1": 0.946236559139785,
+      "eval_mcc": 0.8932853553287942,
+      "eval_sensitivity": 0.9230769230769231,
+      "eval_specificity": 0.9703703703703703,
+      "eval_fpr": 0.02962962962962963,
+      "eval_auc": 0.981999481999482,
+      "eval_threshold": 0.105,
+      "eval_threshold_accuracy": 0.9460431654676259
+    }
+  ],
+  "ensemble_independent_test_metrics": {
+    "eval_accuracy": 0.9578651685393258,
+    "eval_precision": 0.9776536312849162,
+    "eval_recall": 0.9408602150537635,
+    "eval_f1": 0.958904109589041,
+    "eval_mcc": 0.9164183171257487,
+    "eval_sensitivity": 0.9408602150537635,
+    "eval_specificity": 0.9764705882352941,
+    "eval_fpr": 0.023529411764705882,
+    "eval_auc": 0.9851201771030992,
+    "eval_threshold": 0.32399999999999995
+  }
+ 
+}
